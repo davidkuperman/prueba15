@@ -10,5 +10,13 @@
   <%= @company.ceo.name %>
 </p>
 
+<p>
+  <b>Incomes:</b><br/>
+ <%@company.incomes.each do |i|%>
+  <%= i.ammount %><br/>
+  <%end%>
+  <strong>Total:</strong> 
+</p>
+
 <%= link_to 'Edit', edit_company_path(@company) %> |
 <%= link_to 'Back', companies_path %>

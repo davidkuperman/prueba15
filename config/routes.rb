@@ -1,4 +1,6 @@
 Prueba15::Application.routes.draw do
+  resources :incomes
+
   resources :companies
 
   get "pages/home"
