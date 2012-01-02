@@ -5,6 +5,10 @@
   <%= @company.name %>
 </p>
 
+<p>
+  <b>CEO:</b>
+  <%= @company.ceo.name %>
+</p>
 
 <%= link_to 'Edit', edit_company_path(@company) %> |
 <%= link_to 'Back', companies_path %>

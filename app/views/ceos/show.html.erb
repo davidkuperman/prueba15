@@ -6,5 +6,12 @@
 </p>
 
 
+<p>
+  <b>Companies:</b>
+  <%@ceo.companies.each do |c|%>
+  <%= c.name %><br/>
+  <%end%>
+</p>
+
 <%= link_to 'Edit', edit_ceo_path(@ceo) %> |
 <%= link_to 'Back', ceos_path %>
