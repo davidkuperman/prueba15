@@ -16,4 +16,11 @@ describe "GET 'about'" do
   end
 end
 
+  describe "GET 'pricing'" do
+    it "should be succesfull" do
+      get 'pricing'
+      response.should be_success
+    end
+  end
+
 end

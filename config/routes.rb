@@ -1,7 +1,11 @@
 Prueba15::Application.routes.draw do
+  resources :companies
+
   get "pages/home"
 
   get "pages/about"
+
+  get "pages/pricing"
 
   resources :ceos
 
