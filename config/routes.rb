@@ -3,13 +3,10 @@ Prueba15::Application.routes.draw do
 
   resources :companies
 
-  get "pages/home"
-
-  get "pages/about"
-
-  get "pages/pricing"
-
   resources :ceos
+
+  match '/pricing', :to => "pages#pricing"
+  match '/about', :to => "pages#about"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
